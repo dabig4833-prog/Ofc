@@ -1,0 +1,22 @@
+{
+  "name": "naruto-life",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Naruto Life - simulador de vida ninja (Beta 0.1)",
+  "scripts": {
+    "android:add": "cap add android",
+    "android:assets": "capacitor-assets generate --android",
+    "android:sync": "cap sync android",
+    "android:open": "cap open android",
+    "android:apk": "cap sync android && cd android && ./gradlew assembleDebug",
+    "serve": "node -e \"require('http').createServer((q,r)=>{const f=require('fs'),p=require('path');let u=q.url.split('?')[0];if(u==='/')u='/index.html';const fp=p.join(__dirname,'www',u);f.readFile(fp,(e,d)=>{if(e){r.writeHead(404);r.end('404');return}r.end(d)})}).listen(8080,()=>console.log('http://localhost:8080'))\""
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.0.0",
+    "@capacitor/core": "^7.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^3.0.5",
+    "@capacitor/cli": "^7.0.0"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "appId": "com.vidaninja.narutolife",
+  "appName": "Naruto Life",
+  "webDir": "www",
+  "backgroundColor": "#0d1120",
+  "android": {
+    "backgroundColor": "#0d1120"
+  }
+}
